@@ -12,5 +12,6 @@ router.get('/advertisements/', (req, res, next) => {
         .catch(error => next(error))
 }) 
 
+router.get('/advertisements/:id') 
 
 module.exports = router
