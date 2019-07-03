@@ -10,7 +10,7 @@ const userRouter = require('./user/router')
 //app is the API server, use routers here
 const app = express()
 const jsonParser = bodyParser.json()
-app.use(cors)
+app.use(cors())
 app.use(jsonParser)
 app.use(advertisementRouter)
 app.use(userRouter)
