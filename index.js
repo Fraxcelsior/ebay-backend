@@ -11,7 +11,7 @@ const userRouter = require('./user/router')
 const app = express()
 const jsonParser = bodyParser.json()
 app.use(jsonParser)
-//app.use(cors)
+app.use(cors)
 app.use(advertisementRouter)
 app.use(userRouter)
 
